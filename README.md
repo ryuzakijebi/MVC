@@ -1,3 +1,4 @@
+![](img/0.png)
 # Model-View-Controller (MVC)
 Model-View-Controller (MVC) adalah pola desain yang umum digunakan dalam pengembangan perangkat lunak untuk memisahkan komponen-komponen aplikasi menjadi tiga bagian utama.
 #
