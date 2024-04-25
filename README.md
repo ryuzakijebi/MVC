@@ -1,7 +1,5 @@
 ### Project BookList MVC Spring
-![](img/0.png)
-
-## Table of Contents
+### Table of Contents
 
 - [ Dependencies](#-dependencies-)
 - [ Project Structure](#ProjectStructure)
@@ -14,6 +12,7 @@
 - `Thymeleaf`
 - `Spring Web`
 - `PostgreSQL Driver`
+- ![](img/0.png)
 
 ## <a name="ProjectStructure"></a> Project Structure :
 
