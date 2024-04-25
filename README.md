@@ -4,8 +4,7 @@
 ## Table of Contents
 
 - [ Dependencies](#-dependencies-)
-- 
-[ Project Structure](#ProjectStructure)
+- [ Project Structure](#ProjectStructure)
 - [ PostgreSQL Config](#psqlconfig)
 - [ Test Running](#test)
 
