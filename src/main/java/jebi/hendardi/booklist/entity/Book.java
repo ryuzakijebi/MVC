@@ -1,7 +1,6 @@
 package jebi.hendardi.booklist.entity;
 
 import jakarta.persistence.*;
-
 @Entity
 @Table(name = "books")
 public class Book {

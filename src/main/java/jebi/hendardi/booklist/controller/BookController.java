@@ -3,15 +3,12 @@ package jebi.hendardi.booklist.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-
 import jebi.hendardi.booklist.entity.Book;
 import jebi.hendardi.booklist.service.BookService;
 
 @Controller
 public class BookController {
-
     private BookService bookService;
-
     public BookController(BookService bookService) {
         super();
         this.bookService = bookService;
@@ -59,6 +56,11 @@ public class BookController {
     public String deleteBook(@PathVariable Long id) {
         bookService.deleteBookById(id);
         return "redirect:/books";
+    }
+
+    @GetMapping("/book")
+    public String getBookPage() {
+        return "books";
     }
 
 }

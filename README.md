@@ -1,30 +1,59 @@
+### Project BookList MVC Spring
 ![](img/0.png)
-# Model-View-Controller (MVC)
-Model-View-Controller (MVC) adalah pola desain yang umum digunakan dalam pengembangan perangkat lunak untuk memisahkan komponen-komponen aplikasi menjadi tiga bagian utama.
+
+## Table of Contents
+
+- [ Dependencies](#-dependencies-)
+- 
+[ Project Structure](#ProjectStructure)
+- [ PostgreSQL Config](#psqlconfig)
+- [ Test Running](#test)
+
+## <a name="Dependencies"></a> Dependencies :
+- `Spring Boot Dev Tools`
+- `Spring Data JPA`
+- `Thymeleaf`
+- `Spring Web`
+- `PostgreSQL Driver`
+
+## <a name="ProjectStructure"></a> Project Structure :
+
+* `controller` : BookController.java
+* `entity` : Book.java
+* `repository` : BookRepository.java
+* `service` : BookService.java, BookServiceImpl.java
+* `main` : ProjectApplication.java
+* `resources/templates (webpages)` : books.html, create_book.html, edit_book.html
+
+## <a name="psqlconfig"></a> PostgreSQL Config :
+* `Config Database, Schema and Table` : 
+  ![](img/1.png)
+  ![](img/2.png)
+
+* `Config Application.properties` :
+  ![](img/3.png)
+
+
+## <a name="test"></a> Test Running
+* `Home Page`
+  ![](img/4.png)
+
 #
+* `Add New Book`
+  ![](img/5.png)
 
-![](img/1.png)
+  ![](img/6.png)
 
-### Model
-   Model mewakili data atau logika bisnis dalam aplikasi. Ini mencakup objek-objek yang merepresentasikan informasi yang akan ditampilkan atau dimanipulasi oleh pengguna.
-
-**Contoh :**
-Objek-objek JPA (Java Persistence API) yang mewakili entitas database, POJOs (Plain Old Java Objects), atau DTOs (Data Transfer Objects).
-
-**Tanggung Jawab :** Menyediakan data dan logika bisnis, tidak langsung berinteraksi dengan pengguna atau tampilan.
+  ![](img/7.png)
 
 #
-### View
-View bertanggung jawab atas tampilan dari data yang diberikan oleh model. Ini adalah antarmuka pengguna yang menyajikan informasi kepada pengguna dan menghasilkan tampilan yang dilihat oleh pengguna. View tidak bertanggung jawab atas pemrosesan data atau bisnis.
-
-**Contoh :** Berkas JSP (JavaServer Pages), file HTML, Thymeleaf templates, atau React komponen dapat berperan sebagai view dalam aplikasi Spring MVC.
+* `Edit Book`
+  
+  ![](img/8.png)
+  ![](img/9.png)
+  ![](img/10.png)
 
 #
-### Controller
-Controller berperan sebagai penghubung antara model dan view. Ini menerima permintaan dari pengguna melalui antarmuka pengguna dan menangani permintaan tersebut dengan memperbarui model dan memilih view yang sesuai untuk merender hasil kepada pengguna.
-
-**Contoh :** Kelas-kelas yang diberi anotasi dengan @Controller atau @RestController dalam aplikasi Spring MVC bertindak sebagai controller.
-
-**Tanggung Jawab :**
-Menerima permintaan dari pengguna, memproses input, memperbarui model, dan memilih view yang sesuai.
-
+* `Delete Book`
+  ![](img/11.png)
+  ![](img/12.png)
